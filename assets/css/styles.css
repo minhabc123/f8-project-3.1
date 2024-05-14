@@ -257,7 +257,7 @@ a {
 }
 /* Services */
 
-.notice-heading {
+.notice__heading {
     position: relative;
     margin-left: 46px;
     font-size: 1.6rem;
@@ -266,7 +266,7 @@ a {
     color: #152427;
 }
 
-.notice-heading::before {
+.notice__heading::before {
     content: "";
     position: absolute;
     width: 25px;
@@ -550,4 +550,105 @@ a {
 .about__vector {
     top: 3.11px;
     left: 64.23px;
+}
+
+/* Process */
+
+.process-item__body {
+    display: flex;
+    align-items: center;
+    min-height: 185px;
+    border-radius: 33px;
+    transition: 0.25s;
+}
+
+.process__notice::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    bottom: 50%;
+    transform: translateX(-50%);
+    left: -32px;
+    background-color: var(--primary-color);
+}
+.process__heading {
+    width: 477px;
+    position: relative;
+}
+
+.process__heading::after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    bottom: 20px;
+    right: 0;
+    background-color: var(--primary-color);
+}
+
+.process__list {
+    margin-top: 85px;
+}
+
+.process-item {
+    border-bottom: 1px solid #83a17d;
+    transition: ease-in 0.3s;
+}
+
+.process-item:hover {
+    border-color: transparent;
+}
+
+.process-item:hover .process-item__body {
+    background-color: #e2eddf;
+}
+
+.process-item:first-of-type {
+    position: relative;
+}
+
+.process-item__number {
+    margin-left: 30px;
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 0.72;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.process-item__header-part {
+    min-width: 176px;
+    margin: 0 175px 0 67px;
+    display: flex;
+    flex-direction: column;
+}
+
+.process-item__title {
+    margin-bottom: 22px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.process-item__link {
+    display: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    color: var(--desc-color-light);
+    text-decoration: underline;
+}
+
+.process-item:hover .process-item__link {
+    display: block;
+}
+
+.process-decoration {
+    position: absolute;
+    top: -266px;
+    right: 156px;
 }
